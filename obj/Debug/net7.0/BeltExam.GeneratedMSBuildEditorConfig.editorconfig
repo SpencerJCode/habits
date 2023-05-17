@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BeltExam
+build_property.RootNamespace = BeltExam
+build_property.ProjectDir = c:\Users\Spencer Laptop\Desktop\Software Development\Coding Dojo\C Sharp\BeltExam\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\Spencer Laptop\Desktop\Software Development\Coding Dojo\C Sharp\BeltExam
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Habit/AllHabits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRcQWxsSGFiaXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Habit/EditHabit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRcRWRpdEhhYml0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Habit/NewHabit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRcTmV3SGFiaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Habit/UserHabits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRcVXNlckhhYml0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_NewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OZXdVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_ReturningUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXR1cm5pbmdVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_UserHabit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VySGFiaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/User/HomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Spencer Laptop/Desktop/Software Development/Coding Dojo/C Sharp/BeltExam/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yxcmep9odk

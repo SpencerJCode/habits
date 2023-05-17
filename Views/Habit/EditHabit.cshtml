@@ -1,0 +1,25 @@
+@model Habit
+
+    @await Html.PartialAsync("_NavBar")
+ <div class="main-container">
+        <div class="form-container">
+            <form asp-action="UpdateHabit" asp-controller="Habit" method="Post">
+            <h2 class="white-label">Edit Your Habit!!</h2>
+            <hr>
+            <label class="white-label" asp-for="Name">Habit Title:</label>
+            <span asp-validation-for="Name" class="text-danger ml-3"></span><br>
+            <input asp-for="Name" value="@Model.Name"><br>
+            <label class="white-label" asp-for="Description">Description:</label>
+            <span asp-validation-for="Description" class="text-danger ml-3"></span><br>
+            <input asp-for="Description" value="@Model.Description"><br><br>
+            <select asp-for="Category">
+                <option value="Personal">Personal</option>
+                <option value="Health and Wellness">Health and Wellness</option>
+                <option value="Knowledge Seeking">Knowledge Seeking</option>
+                <option value="Hobby">Hobby</option>
+            </select><br><br>
+            <input type="hidden" asp-for="HabitId" value='@Model.HabitId'>
+            <button type="submit" class="submit">Edit Habit!</button>
+        </form>
+        </div>
+    </div>

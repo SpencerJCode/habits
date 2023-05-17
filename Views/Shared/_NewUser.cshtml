@@ -1,0 +1,24 @@
+@model User
+
+<div class="form-container">
+    <h2 class="white-label">Register New User</h2>
+    <hr>
+    <form asp-action="CreateUser" asp-controller="User" methond="POST">
+        <label class="white-label" asp-for="FirstName">First Name: </label>
+        <span asp-validation-for="FirstName" class="text-danger ml-3"></span><br>
+        <input asp-for="FirstName"><br>
+        <label class="white-label" asp-for="LastName">Last Name :</label>
+        <span asp-validation-for="LastName" class="text-danger ml-3"></span><br>
+        <input asp-for="LastName"><br>
+        <label class="white-label" asp-for="Email">Email Address: </label>
+        <span asp-validation-for="Email" class="text-danger ml-3"></span><br>
+        <input asp-for="Email"><br>
+        <label class="white-label" asp-for="Password">Password: </label>
+        <span asp-validation-for="Password" class="text-danger ml-3"></span><br>
+        <input asp-for="Password"><br>
+        <label class="white-label" asp-for="ConfirmPassword">Confirm Password: </label>
+        <span asp-validation-for="ConfirmPassword" class="text-danger ml-3"></span><br>
+        <input asp-for="ConfirmPassword"><br>
+        <button type="submit" class="submit">Create Account</button>
+    </form>
+</div>

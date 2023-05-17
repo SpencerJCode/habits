@@ -1,0 +1,7 @@
+    <div class="NavBar">
+        <a asp-action="AllHabits" asp-controller="Habit" class="NavBar-text">Habit Helper</a>
+        <div> | </div>
+        <a asp-action="NewHabit" asp-controller="Habit" class="NavBar-text">Start a Habit</a>
+        <div> | </div>
+        <form asp-action="LogOut" asp-controller="User" method="Post"><button type="submit" class="NavBar-text NavBar-button">Log Out</button></form>
+    </div>

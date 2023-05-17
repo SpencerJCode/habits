@@ -1,0 +1,83 @@
+@model List<Habit>
+
+@await Html.PartialAsync("_NavBar")
+<div class="main-container">
+    <div class="content-container">
+        <h2>Your Habits</h2>
+        @foreach (Habit habit in @Model)
+        {
+            if (habit.UserId == @Context.Session.GetInt32("UserId"))
+            {
+                <h6>____________________________________</h6>
+                <h4>⚫ @habit.Name</h4>
+                @if((DateTime.Now - habit.UpdatedAt).TotalDays <=1)
+                {
+                    <p style="color:red">Recently Updated!</p>
+                }
+                @if (@habit.Cheers.Count == 0)
+                {
+                    <p>No cheers yet :(</p>
+                }
+                @if (@habit.Cheers.Count == 1)
+                {
+                    <p>1 person is cheering you on!</p>
+                }
+                @if (@habit.Cheers.Count >= 2)
+                {
+                    <p>@habit.Cheers[0].User.FirstName and @habit.Cheers.Count-1 others are cheering
+                        you on!</p>
+                }
+                <p>@habit.Category</p>
+                <div class="action-buttons">
+                    <form asp-action="EditHabit" asp-controller="Habit" asp-route-HabitId="@habit.HabitId" method="Get"><button
+                            type="submit" class="habit-button">Edit</button></form>
+                    <form asp-action="DeleteHabit" asp-controller="Habit" asp-route-HabitId="@habit.HabitId" method="Post">
+                        <button type="submit" class="habit-button">Delete</button>
+                    </form>
+                </div>
+            }
+        }
+    </div>
+    <div class="content-container bordered">
+        <h2>Other Habits</h2>
+        @foreach (Habit habit in @Model)
+        {
+            if (habit.UserId != @Context.Session.GetInt32("UserId"))
+            {
+                <h4><a asp-action="ViewUser" asp-controller="Habit" asp-route-UserId="@habit.UserId">@habit.user.FirstName</a>'s
+                    @habit.Name</h4>
+                    @if((DateTime.Now - habit.UpdatedAt).TotalDays <=1)
+                {
+                    <p style="color:red">Recently Updated!</p>
+                }
+                @if (@habit.Cheers.Count == 0)
+                {
+                    <p>Give them their first cheer!</p>
+                }
+                @if (@habit.Cheers.Count == 1)
+                {
+                    <p>1 person is cheering them on!</p>
+                }
+                @if (@habit.Cheers.Count >= 2)
+                {
+                   int allcheers = @habit.Cheers.Count -1;
+                <p>@habit.Cheers[0].User.FirstName and @allcheers others are cheering
+                    them on!</p>
+                }
+                @if (@habit.Cheers.Any(cheer => cheer.UserId == @Context.Session.GetInt32("UserId")))
+                {
+                    <p>Thanks for Cheering!</p>
+                }
+                <p>@habit.Category</p>
+
+                @if (!@habit.Cheers.Any(cheer => cheer.UserId == @Context.Session.GetInt32("UserId")))
+                {
+                    <div class="action-buttons">
+                        <form asp-action="CreateCheer" asp-controller="Habit" asp-route-HabitId="@habit.HabitId" method="Post"><button type="submit" class="habit-button">Cheer!</button></form>
+                    </div>
+                }
+
+            }
+        }
+    </div>
+</div>

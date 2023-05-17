@@ -1,0 +1,39 @@
+@model List<Habit>
+
+@await Html.PartialAsync("_NavBar")
+<div class="main-container">
+    <div class="content-container">
+        <H1>@ViewBag.UserName habits!</H1>
+        @foreach (Habit habit in @Model)
+        {
+            <h4>_____________________</h4>
+            <h4>@habit.Name</h4>
+            <h5>@habit.Description</h5>
+            <h6>@habit.Category</h6>
+            @if (@habit.Cheers.Count == 0)
+            {
+                <p>Give them their first cheer!</p>
+            }
+            @if (@habit.Cheers.Count == 1)
+            {
+                <p>1 person is cheering them on!</p>
+            }
+            @if (@habit.Cheers.Count >= 2)
+            {   int allcheers = @habit.Cheers.Count -1;
+                <p>@habit.Cheers[0].User.FirstName and @allcheers others are cheering
+                    them on!</p>
+            }
+            @if (@habit.Cheers.Any(cheer => cheer.UserId == @Context.Session.GetInt32("UserId")))
+            {
+                <p>Thanks for Cheering!</p>
+            }
+            @if (!@habit.Cheers.Any(cheer => cheer.UserId == @Context.Session.GetInt32("UserId")))
+            {
+                <div class="action-buttons">
+                    <form asp-action="CreateCheer" asp-controller="Habit" asp-route-HabitId="@habit.HabitId" method="Post">
+                        <button type="submit" class="habit-button">Cheer!</button></form>
+                </div>
+            }
+        }
+    </div>
+</div>

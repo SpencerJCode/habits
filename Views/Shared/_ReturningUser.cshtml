@@ -1,0 +1,15 @@
+@model ReturningUser
+
+<div class="form-container">
+    <h2 class="white-label">Log In</h2>
+    <hr>
+    <form asp-action="LoginUser" asp-controller="User" method="POST">
+        <label class="white-label" asp-for="ReturningEmail">Email Address:</label>
+        <span asp-validation-for="ReturningEmail" class="text-danger ml-3"></span><br>
+        <input asp-for="ReturningEmail"><br>
+        <label class="white-label" asp-for="ReturningPassword">Password:</label>
+        <span asp-validation-for="ReturningPassword" class="text-danger ml-3"></span><br>
+        <input asp-for="ReturningPassword"><br>
+        <button type="submit" class="submit">Log In</button>
+    </form>
+</div>
